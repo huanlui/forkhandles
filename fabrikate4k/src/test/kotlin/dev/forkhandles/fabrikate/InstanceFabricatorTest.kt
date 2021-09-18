@@ -24,7 +24,8 @@ import java.time.OffsetDateTime
 import java.time.OffsetTime
 import java.time.YearMonth
 import java.time.ZonedDateTime
-import java.util.*
+import java.util.Date
+import java.util.UUID
 
 @Suppress(
     "ConvertSecondaryConstructorToPrimary",
@@ -104,6 +105,7 @@ class InstanceFabricatorTest {
 
     @Test
     fun `creates primitives`() {
+        assertTrue(Fabrikate().random<Boolean>() is Boolean)
         assertTrue(Fabrikate().random<Int>() is Int)
         assertTrue(Fabrikate().random<Long>() is Long)
         assertTrue(Fabrikate().random<Double>() is Double)
@@ -327,11 +329,13 @@ class InstanceFabricatorTest {
         val w: File,
         val x: UUID,
         val y: Duration,
+        val z: YearMonth,
+        val aa: Boolean
     )
 
     @Test
     fun `supports common types`() {
-        assertThat(Fabrikate().random<Foobar>().also(::println), present())
+        assertThat(Fabrikate().random<Foobar>(), present())
     }
 
     @Suppress("DataClassPrivateConstructor")

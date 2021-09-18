@@ -3,10 +3,13 @@
 This list is not intended to be all-encompassing - it will document major and breaking API changes with their rationale
 when appropriate:
 
-### v1.11.1.0
+### v1.11.2.0 (uncut)
+- **fabrikate4k** : Provide more information when InstanceFabricator cannot create an instance H/T @huanlui
 
+### v1.11.1.0
 - **all** : Upgrade of dependencies
-- **fakrikate4k** Make Nullable creation behaviour configurable. H/T @huanlui
+- **fabrikate4k** Make Nullable creation behaviour configurable. H/T @huanlui
+- **fabrikate4k** Fix #26 - added Boolean fabricator.
 
 ### v1.11.0.0
 
@@ -14,11 +17,11 @@ when appropriate:
 
 ### v1.10.3.0
 
-- **fakrikate4k** Allow registered Fabricators to override defaults. H/T @LeoJohannsson-imtf
+- **fabrikate4k** Allow registered Fabricators to override defaults. H/T @LeoJohannsson-imtf
 
 ### v1.10.2.0
 
-- **fakrikate4k** Use deprecated hidden constructors as last option only. H/T @saibot
+- **fabrikate4k** Use deprecated hidden constructors as last option only. H/T @saibot
 - **all** : Upgrade of dependencies, including Kotlin to 1.5.21.
 
 ### v1.10.1.0
